@@ -9,7 +9,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.166), rgba(0, 0, 0.166)),
-    url(../images/glow.jpg);
+    url(../images/radiant.jpg);
   background-repeat: no repeat;
   background-size: cover;
   color: white;
@@ -42,11 +42,56 @@ header a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
+
+main {
+  background-color: beige;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #3d3f49;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1.5;
+  color: #3d3f49;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3d3f49;
+  opacity: 0.7;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 64px;
+}
+
+.image-responsive {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-all-equal {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer {
@@ -59,7 +104,6 @@ footer {
   background-size: cover;
   color: black;
   text-align: center;
-  padding: 0.5px 0;
 }
 
 .footer-form {
@@ -117,5 +161,12 @@ footer li {
   }
   header h3 {
     font-size: 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
